@@ -1,0 +1,4 @@
+import string from "./string";
+import texthandle from "./function/text";
+
+export {string,texthandle}
