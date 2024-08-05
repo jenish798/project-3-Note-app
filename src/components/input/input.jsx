@@ -1,21 +1,14 @@
-import React from 'react';
-import string from '../../utils/string';
-import ButtonComp from '../button/button';
-// import '../input.css'
 
-const Input = ({save}) => {
-
-    const {placeholder} = string
-    // const textareaStyle = {
-    //     height: '200px',
-    //     width: '300px'
-    // };
-
+const Input = (value,onChange,placeholder) =>{
     return(
         <>
-    <textarea name="note" cols='30' rows='15' id="" placeholder={placeholder}></textarea>
-    <ButtonComp name={save}/>
-    </>
+<textarea cols='25' 
+rows='15' 
+maxLength='100'
+placeholder={placeholder}
+value={value}
+onChange={onChange}/>
+        </>
     )
 }
 

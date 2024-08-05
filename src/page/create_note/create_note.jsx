@@ -1,14 +1,25 @@
 import React from "react"
-import ButtonComp from "../../components/button/button"
 import string from "../../utils/string"
-import Input from "../../components"
+import ButtonComp from "../../components";
+import Input from "../../components/input/input";
 
-const CreateNote = () =>{
-    const {save} = string
+const CreateNote = ({inputText,textHandler,saveHandler}) =>{
+    const {save,left,placeholder} = string
+    const charLimit = 100;
+    const charLeft = charLimit - inputText.length
+    
     return(
         <>
-        <Input/>
-                    <ButtonComp name={save}/>
+       <textarea 
+       cols='25'
+       rows='15'
+       value={inputText}
+       onChange={textHandler}
+       maxLength='100'
+       ></textarea>
+ 
+       <span>{charLeft} {left}</span>
+        <ButtonComp onClick={saveHandler} name={save}/>
         </>
     )
 }
