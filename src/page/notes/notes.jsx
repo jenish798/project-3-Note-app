@@ -1,8 +1,9 @@
 import React, { useState,useEffect } from "react"
+import {v4 as uuid} from 'uuid'
 import string from "../../utils/string/string"
 import CreateNote from "../create_note/create_note"
 import Note from "../note/note"
-import {v4 as uuid} from 'uuid'
+
 
 const Notes = () =>{
     const {save} = string

@@ -1,4 +1,4 @@
-import string from "../../utils/string"
+import string from "../../utils/string/string"
 
 const Header = () =>{
     const {heading} = string
