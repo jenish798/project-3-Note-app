@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react"
-import string from "../../utils/string"
+import string from "../../utils/string/string"
 import CreateNote from "../create_note/create_note"
 import Note from "../note/note"
 import {v4 as uuid} from 'uuid'

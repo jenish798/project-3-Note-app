@@ -1,7 +1,6 @@
 import React from "react"
-import string from "../../utils/string"
+import string from "../../utils/string/string"
 import ButtonComp from "../../components";
-import Input from "../../components/input/input";
 
 const CreateNote = ({inputText,textHandler,saveHandler}) =>{
     const {save,left,placeholder} = string
