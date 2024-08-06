@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import './App.css'
-import {Header, Notes } from './page'
+import "./App.css";
+import { Header, Notes } from "./pages";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Header/>
+      <Header />
       <Notes />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

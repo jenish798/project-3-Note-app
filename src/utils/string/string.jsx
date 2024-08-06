@@ -1,4 +1,3 @@
-
 const string ={
     placeholder:'Type...',
     heading:'Notes',

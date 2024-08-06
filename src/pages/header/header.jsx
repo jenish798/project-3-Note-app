@@ -1,12 +1,12 @@
-import string from "../../utils/string/string"
+import string from "../../utils/string/string";
 
-const Header = () =>{
-    const {heading} = string
-return(
+const Header = () => {
+  const { heading } = string;
+  return (
     <>
-    <h1>{heading}</h1>
+      <h1>{heading}</h1>
     </>
-)
-}
+  );
+};
 
-export default Header
+export default Header;
