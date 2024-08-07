@@ -8,19 +8,20 @@ const CreateNote = ({ inputText, textHandler, saveHandler }) => {
   const charLeft = charLimit - inputText.length;
 
   return (
-    <>
+    <div className="note">
       <Textarea
         value={inputText}
         onchange={textHandler}
         maxLength={charLimit}
         placeholder={placeholder}
       />
-
-      <span>
+<div className="note_create">
+      <span className="label">
         {charLeft} {left}
       </span>
-      <ButtonComp onClick={saveHandler} name={save} />
-    </>
+      <ButtonComp className='note__save' onClick={saveHandler} name={save} />
+      </div>
+    </div>
   );
 };
 

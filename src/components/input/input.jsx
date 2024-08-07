@@ -2,6 +2,7 @@ import React from "react";
 
 const Textarea = ({ value, onchange, maxLength,placeholder }) => {
   return (
+    <div>
     <textarea
       cols="25"
       rows="15"
@@ -10,6 +11,7 @@ const Textarea = ({ value, onchange, maxLength,placeholder }) => {
       onChange={onchange}
       maxLength={maxLength}
     ></textarea>
+    </div>
   );
 };
 

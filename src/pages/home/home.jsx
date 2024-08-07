@@ -39,7 +39,7 @@ const Notes = () => {
   };
 
   return (
-    <>
+    <div className="notes">
       {notes?.map((note) => (
         <Note
           key={note?.id}
@@ -53,7 +53,7 @@ const Notes = () => {
         saveHandler={saveHandler}
         inputText={inputText}
       />
-    </>
+    </div>
   );
 };
 
