@@ -34,7 +34,7 @@ const Notes = () => {
   };
 
   const deleteNote = (id) => {
-    const filteredNotes = notes.filter((note) => note?.id !== id);
+    const filteredNotes = notes.filter((note) => note.id !== id);
     setNotes(filteredNotes);
   };
 

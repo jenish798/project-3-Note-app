@@ -13,6 +13,7 @@ const CreateNote = ({ inputText, textHandler, saveHandler }) => {
         value={inputText}
         onchange={textHandler}
         maxLength={charLimit}
+        placeholder={placeholder}
       />
 
       <span>

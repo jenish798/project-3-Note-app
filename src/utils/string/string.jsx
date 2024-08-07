@@ -1,5 +1,5 @@
 const string ={
-    placeholder:'Type...',
+    placeholder:'Type a notes',
     heading:'Notes',
     save:'Save',
     left:'left',
