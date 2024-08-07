@@ -1,4 +1,4 @@
-import ButtonComp from "../../components";
+import ButtonComp from "../../components/button/button";
 import string from "../../utils/string/string";
 
 const Note = ({ id, text, deleteNote }) => {

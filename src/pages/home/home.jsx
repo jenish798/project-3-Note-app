@@ -34,17 +34,17 @@ const Notes = () => {
   };
 
   const deleteNote = (id) => {
-    const filteredNotes = notes.filter((note) => note.id !== id);
+    const filteredNotes = notes.filter((note) => note?.id !== id);
     setNotes(filteredNotes);
   };
 
   return (
     <>
-      {notes.map((note) => (
+      {notes?.map((note) => (
         <Note
-          key={note.id}
-          id={note.id}
-          text={note.text}
+          key={note?.id}
+          id={note?.id}
+          text={note?.text}
           deleteNote={deleteNote}
         />
       ))}

@@ -1,3 +1,4 @@
 import ButtonComp from "./button/button";
+import Textarea from "./input/input";
 
-export default ButtonComp
+export {ButtonComp,Textarea}

@@ -1,6 +1,6 @@
 import React from "react";
 import string from "../../utils/string/string";
-import ButtonComp from "../../components";
+import { ButtonComp, Textarea } from "../../components";
 
 const CreateNote = ({ inputText, textHandler, saveHandler }) => {
   const { save, left, placeholder } = string;
@@ -9,13 +9,11 @@ const CreateNote = ({ inputText, textHandler, saveHandler }) => {
 
   return (
     <>
-      <textarea
-        cols="25"
-        rows="15"
+      <Textarea
         value={inputText}
-        onChange={textHandler}
-        maxLength="100"
-      ></textarea>
+        onchange={textHandler}
+        maxLength={charLimit}
+      />
 
       <span>
         {charLeft} {left}
